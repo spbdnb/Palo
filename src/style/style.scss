@@ -81,11 +81,21 @@ article {
 	font-style: normal;
 	font-size: 16px;
 }
+.top_nav a.icon-search:hover {
+	border-bottom: none;
+}
+.top_nav a:hover {
+	border-bottom: #5c6bc0 3px solid;
+	padding-bottom: 4px;
+}
 .top_nav a:last-child {
 	margin-right: 0;
 }
 a.active {
 	color: #c9c9ca;
+}
+a.active:hover {
+	border-bottom: none;
 }
 .post {
 	background-color: #fff;
@@ -473,10 +483,6 @@ h6 {
 }
 .top_nav a.icon-search:hover {
 	color: #5c6bc0;
-}
-.top_nav a:hover span {
-	border-bottom: #5c6bc0 3px solid;
-	padding-bottom: 4px;
 }
 .menu_js {
 	background-image: url(img/burger.png);

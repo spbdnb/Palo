@@ -3,14 +3,14 @@
 			<div class="row">
 				<div class="col-md-12">
 					<h2 class="bottom-logo"><a href="index.html">Palo Alto</a></h2>
-					<div class="bottom_nav">
+					<nav class="bottom_nav">
 						<ul>
 							{% for link, title in data.nav %}
 								<li><a href="{{link}}.html" {% if link==page %}class="active"{% endif %}>{{ title }}</a></li>
 							{% endfor %}
 							<li><a href="search-1.html" class="icon icon-search"></a></li>
 						</ul>
-					</div>
+					</nav>
 					<h6 class=" foot-line">
 						Nunc placerat dolor at lectus hendrerit dignissim. Ut tortor sem, consectetur nec hendrerit ut, ullamcorper ac odio. Donec viverra ligula at quam tincidunt imperdiet. Nulla mattis tincidunt auctor.
 					</h6>
