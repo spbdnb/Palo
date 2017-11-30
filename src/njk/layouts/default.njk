@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Palo Alto</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+<div id="page" class="site">
+
+    {% include "../partials/header.njk" %}
+
+    <main class="main-wrap">
+
+        {% block content %}{% endblock %}
+
+    </main>
+
+    {% include "../partials/footer.njk" %}
+
+</div><!-- #wrapper -->
+
+<!-- BEGIN scripts -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="js/tether.min.js"></script>
+<!-- END scripts -->
+
+</body>
+</html>

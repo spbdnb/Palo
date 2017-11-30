@@ -16,7 +16,7 @@ const reload = browserSync.reload;
 const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV =="development";
 
 gulp.task("scss", function() {
-	return gulp.src("src/style/main.scss")
+	return gulp.src("src/style/style.scss")
 		.pipe(gulpIf(isDevelopment, sourcemaps.init()))
 		.pipe(sass())
 		.on("error", sass.logError)
@@ -33,15 +33,15 @@ gulp.task("assets", function() {
 		.pipe(gulp.dest("build/assets"));
 });
 
-gulp.task("html", function() {
+/*gulp.task("html", function() {
 	return gulp.src("src/html/*.html")
-		.pipe(gulp.dest("build"));
-});
+		.pipe(gulp.dest("build")); 
+}); */
 
 gulp.task("njk", function() {
-	return gulp.src("src/templates/*.njk")
+	return gulp.src("src/njk/*.njk")
 		.pipe(nunjucks({
-			path: ['src/templates']
+			path: ['src/njk']
 		}))
 		.pipe(gulp.dest("build"))
 		.on('end', reload);
@@ -51,12 +51,12 @@ gulp.task("clean", function() {
 	return del("build");
 });
 
-gulp.task("build", gulp.series("scss", "njk", "assets", "html"));
+gulp.task("build", gulp.series("scss", "njk", "assets"));
 
 gulp.task("watch", function() {
 	gulp.watch("src/style/**/*.scss", gulp.series("scss"));
-	gulp.watch("src/templates/**/*.njk", gulp.series("njk"));
-	gulp.watch("src/html/**/*.html", gulp.series("html"));
+	gulp.watch("src/njk/**/*.njk", gulp.series("njk"));
+	//gulp.watch("src/html/**/*.html", gulp.series("html"));
 });
 
 gulp.task("webserver", function() {
