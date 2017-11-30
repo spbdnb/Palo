@@ -12,6 +12,7 @@ const nunjucks = require("gulp-nunjucks-render");
 const del = require("del");
 const browserSync = require("browser-sync");
 const reload = browserSync.reload;
+const fs = require('file-system');
 
 const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV =="development";
 
@@ -41,7 +42,10 @@ gulp.task("assets", function() {
 gulp.task("njk", function() {
 	return gulp.src("src/njk/*.njk")
 		.pipe(nunjucks({
-			path: ['src/njk']
+			path: ['src/njk'],
+			data: {
+                data: JSON.parse(fs.readFileSync('src/njk/helpers/data.json').toString())
+            }
 		}))
 		.pipe(gulp.dest("build"))
 		.on('end', reload);
