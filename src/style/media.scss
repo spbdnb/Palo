@@ -91,6 +91,8 @@
 	.button-more {
 		float: none;
 		margin-bottom: 40px;
+		width: auto;
+		margin-left: -8px;
 	}
 	.img_reflect {
 		float: none;
@@ -163,7 +165,7 @@
 		text-indent: 28px;
 	}
 	.message-button {
-	padding-left: 52px;
+	margin-left: 50px;
 	}
 	.grid-photos {
 	border: 6px solid #fff;
@@ -298,11 +300,11 @@
 		margin-bottom: 50px;
 	}
 	.post-title-wrap {
-	margin-top: 0;
-	margin-bottom: 30px;
+		margin-top: 0;
+		margin-bottom: 30px;
 	}
 	.img_quote {
-	margin-left: -10px;
+		margin-left: -10px;
 	}
 	.bottom_nav li {
 		display: block;
@@ -326,6 +328,9 @@
 	.contacts-wrap textarea {
 		text-indent: 24px;
 		font-size: 17px;
+	}
+	.message-button {
+	margin-left: 24px;
 	}
 }
 
