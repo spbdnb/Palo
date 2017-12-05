@@ -29,6 +29,12 @@
 	.top_nav {
 		display: none;
 	}
+	.logo-wrap {
+		display: none;
+	}
+	.navbar-bootstrap-wrap {
+		display: block;
+	}
 	.post-title {
 		font-size: 32px;
 		line-height: 42px;
@@ -343,6 +349,9 @@
 
 /* Extra Small Devices, Phones */
 @media screen and (min-width : 480px) {
+	.navbar-bootstrap-wrap{
+		display: none;
+	}
 }
 
 /* Small Devices, Tablets */

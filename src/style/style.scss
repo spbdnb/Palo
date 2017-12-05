@@ -570,4 +570,74 @@ textarea::placeholder {
 .message-button {
 	margin-left: 90px;
 }
-
+.navbar {
+	border: none;
+}
+.navbar-header {
+	background-color: #f7f9fc;
+}
+.navbar-default .navbar-brand {
+	color: #333333;
+}
+.navbar-brand-wrap {
+	font-size: 42px;
+	height: 60px;
+}
+.navbar-collapse {
+	background-color: #252b4d;
+	font-size: 18px;
+	font-weight: 700;
+	font-style: normal;
+	text-transform: uppercase;
+}
+.navbar-nav li {
+	margin-left: 40px;
+	margin-bottom: 40px;
+}
+.navbar-nav li:nth-last-child(1) {
+	margin-bottom: 100px;
+}
+.navbar-nav li a {
+	color: #fff;
+}
+.navbar-nav li a.active {
+	color: #a9afdb;
+}
+.navbar-search {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	border-bottom: 1px solid #3b415f;
+	padding-left: 15px;
+}
+.navbar-search li {
+	display: inline-block;
+	list-style-type: none;
+}
+.navbar-search li a {
+	color: #9597a3;
+}
+.navbar-search a.icon-search {
+	color: #fff;
+}
+.navbar-search-right {
+	float: right;
+	margin-right: 40px;
+}
+.navbar-logo-wrap a {
+	color: #fff;
+	font-size: 26px;
+	line-height: 25px;
+	font-style: italic;
+	font-weight: 700;
+	text-transform: none;
+	margin-left: 40px;
+}
+.navbar-info-wrap {
+	color: #6b6f86;
+	font-size: 14px;
+	font-weight: 700;
+	margin-left: 40px;
+	text-transform: none;
+	line-height: 19px;
+	margin-bottom: 60px;
+}
